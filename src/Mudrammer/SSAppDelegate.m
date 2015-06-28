@@ -154,11 +154,9 @@
             break;
 
         case SSApplicationEventWillEnterForeground:
-
-            break;
-
         case SSApplicationEventDidEnterBackground:
         case SSApplicationEventWillResignActive:
+        case SSApplicationEventDidReceiveMemoryWarning:
 
             break;
 
@@ -168,9 +166,6 @@
 
             [MagicalRecord cleanUp];
 
-            break;
-
-        default:
             break;
     }
 }
@@ -191,10 +186,7 @@ forLocalNotification:(UILocalNotification *)notification
                                                completion:completionHandler];
 }
 
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    // running app received a local notification
-    DLog(@"Received local %@", notification);
-}
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {}
 
 #pragma mark - user defaults
 

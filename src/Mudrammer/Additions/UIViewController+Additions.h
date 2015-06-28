@@ -13,7 +13,7 @@
 
 - (BOOL) shouldAutorotate;
 
-- (NSUInteger) supportedInterfaceOrientations;
+- (UIInterfaceOrientationMask) supportedInterfaceOrientations;
 
 - (BOOL) isViewVisible;
 

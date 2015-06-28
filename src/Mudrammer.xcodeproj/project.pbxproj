@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E004D9F194D522A00EE1448 /* SPLImagesCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E004D9E194D522A00EE1448 /* SPLImagesCatalog.m */; };
+		5E004D9F194D522A00EE1448 /* SPLImagesCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E004D9E194D522A00EE1448 /* SPLImagesCatalog.m */; settings = {COMPILER_FLAGS = "-Wno-semicolon-before-method-body"; }; };
 		5E004DA4194D53DA00EE1448 /* SSANSIEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E004DA1194D53DA00EE1448 /* SSANSIEngine.m */; };
 		5E004DA5194D53DA00EE1448 /* SSAttributedLineGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E004DA3194D53DA00EE1448 /* SSAttributedLineGroup.m */; };
 		5E004DA8194D543300EE1448 /* SSThemes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E004DA7194D543300EE1448 /* SSThemes.m */; };
@@ -1235,7 +1235,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SPL;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "splinesoft LLC";
 				TargetAttributes = {
 					5E4F3CCD198D98650041A436 = {
@@ -1689,6 +1689,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "MRTests/MRTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.splinesoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1722,6 +1723,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "MRTests/MRTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.splinesoft.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1738,6 +1740,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
@@ -1839,8 +1842,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				INFOPLIST_FILE = "Mudrammer/Supporting Files/Mudrammer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.splinesoft.theMUDRammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1855,6 +1859,17 @@
 					"-Wfloat-equal",
 					"-Wbridge-cast",
 					"-Wnewline-eof",
+					"-Weverything",
+					"-Wno-auto-import",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-assign-enum",
+					"-Wno-gnu-statement-expression",
+					"-Wno-implicit-retain-self",
+					"-Wno-cast-qual",
+					"-Wno-cstring-format-directive",
+					"-Wno-pedantic",
+					"-Wno-switch-enum",
 				);
 				WRAPPER_EXTENSION = app;
 			};
@@ -1916,7 +1931,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				INFOPLIST_FILE = "Mudrammer/Supporting Files/Mudrammer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.splinesoft.theMUDRammer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1931,6 +1947,17 @@
 					"-Wfloat-equal",
 					"-Wbridge-cast",
 					"-Wnewline-eof",
+					"-Weverything",
+					"-Wno-auto-import",
+					"-Wno-objc-missing-property-synthesis",
+					"-Wno-direct-ivar-access",
+					"-Wno-assign-enum",
+					"-Wno-gnu-statement-expression",
+					"-Wno-implicit-retain-self",
+					"-Wno-cast-qual",
+					"-Wno-cstring-format-directive",
+					"-Wno-pedantic",
+					"-Wno-switch-enum",
 				);
 				WRAPPER_EXTENSION = app;
 			};

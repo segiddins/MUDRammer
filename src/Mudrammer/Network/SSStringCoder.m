@@ -112,7 +112,7 @@
 
         @try {
             encodedUserInput = [self dataByEncodingStringWithCurrentEncoding:command];
-        } @catch (NSException *exc) {
+        } @catch (__unused NSException *exc) {
 
         }
 
